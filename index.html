@@ -395,7 +395,7 @@
   <section>
     <h2 data-en="Location" data-zh="所在位置" data-ja="所在地">Location</h2>
     <div class="map-frame">
-      <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      <iframe title="Map" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin"
         src="https://www.openstreetmap.org/export/embed.html?bbox=119.5%2C21.7%2C122.3%2C25.5&amp;layer=mapnik"></iframe>
     </div>
     <p class="form-hint" style="margin-top:10px;" data-en="Based in Taiwan — working remotely with clients worldwide." data-zh="人在台灣 — 遠端與全球客戶合作。" data-ja="台湾在住 — 世界中のクライアントとリモートで協力します。">Based in Taiwan — working remotely with clients worldwide.</p>
@@ -470,7 +470,7 @@
     var message = document.getElementById('cf-message').value.trim();
     var subject = 'Portfolio Contact from ' + name;
     var body = message + '\n\n— ' + name + ' (' + email + ')';
-    window.location.href = 'mailto:b0913890404@gmail.com'
+    window.location.href = 'mailto:' + ['b0913890404', 'gmail.com'].join('@')
       + '?subject=' + encodeURIComponent(subject)
       + '&body=' + encodeURIComponent(body);
   });
