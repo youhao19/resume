@@ -119,6 +119,20 @@
     font-size:0.9rem;
     color:var(--text);
   }
+  .chart-title{font-size:0.9rem;font-weight:600;margin-bottom:12px;}
+  .chart-note{font-size:0.8rem;color:var(--text-dim);margin-top:12px;}
+  .bar-row{
+    display:grid;
+    grid-template-columns:110px 1fr 88px;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+    font-size:0.9rem;
+  }
+  .bar-label{color:var(--text);}
+  .bar-val{color:var(--text-dim);font-size:0.85rem;}
+  .bar-track{height:8px;background:var(--border);border-radius:4px;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--accent);border-radius:4px;}
   .job{
     background:var(--card);
     border:1px solid var(--border);
@@ -228,6 +242,30 @@
       </ul>
     </section>
   </div>
+
+  <section>
+    <h2 data-en="Proficiency" data-zh="熟練度" data-ja="習熟度">Proficiency</h2>
+    <div class="grid-two">
+      <div>
+        <div class="chart-title" data-en="Skills &amp; Tools (self-rated)" data-zh="技能與工具（自評）" data-ja="スキル・ツール（自己評価）">Skills &amp; Tools (self-rated)</div>
+        <div class="bar-chart">
+          <div class="bar-row"><span class="bar-label">DaVinci Resolve</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:75%"></div></div><span class="bar-val" data-en="Advanced" data-zh="進階" data-ja="上級">Advanced</span></div>
+          <div class="bar-row"><span class="bar-label">CapCut</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:75%"></div></div><span class="bar-val" data-en="Advanced" data-zh="進階" data-ja="上級">Advanced</span></div>
+          <div class="bar-row"><span class="bar-label" data-en="Short-form" data-zh="短影音" data-ja="短編">Short-form</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:75%"></div></div><span class="bar-val" data-en="Advanced" data-zh="進階" data-ja="上級">Advanced</span></div>
+          <div class="bar-row"><span class="bar-label" data-en="Long-form" data-zh="長片" data-ja="長編">Long-form</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:50%"></div></div><span class="bar-val" data-en="Intermediate" data-zh="中階" data-ja="中級">Intermediate</span></div>
+          <div class="bar-row"><span class="bar-label" data-en="AI workflows" data-zh="AI 流程" data-ja="AIフロー">AI workflows</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:50%"></div></div><span class="bar-val" data-en="Intermediate" data-zh="中階" data-ja="中級">Intermediate</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="chart-title" data-en="Languages" data-zh="語言能力" data-ja="言語">Languages</div>
+        <div class="bar-chart">
+          <div class="bar-row"><span class="bar-label" data-en="Chinese" data-zh="中文" data-ja="中国語">Chinese</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val" data-en="Native" data-zh="母語" data-ja="ネイティブ">Native</span></div>
+          <div class="bar-row"><span class="bar-label" data-en="English" data-zh="英文" data-ja="英語">English</span><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:25%"></div></div><span class="bar-val" data-en="Basic" data-zh="基礎" data-ja="初級">Basic</span></div>
+        </div>
+        <div class="chart-note" data-en="Scale: Basic · Intermediate · Advanced · Native/Expert" data-zh="等級：基礎 · 中階 · 進階 · 母語/專家" data-ja="レベル：初級 · 中級 · 上級 · ネイティブ/専門">Scale: Basic · Intermediate · Advanced · Native/Expert</div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <h2 data-en="Experience" data-zh="工作經歷" data-ja="職務経歴">Experience</h2>
