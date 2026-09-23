@@ -169,6 +169,13 @@
   }
   .submit-btn:hover{opacity:0.9;}
   .form-hint{font-size:0.85rem;color:var(--text-dim);}
+  .map-frame{
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+    background:var(--card);
+  }
+  .map-frame iframe{display:block;width:100%;height:320px;border:0;}
   footer{
     color:var(--text-dim);
     font-size:0.9rem;
@@ -310,6 +317,15 @@
       <button type="submit" class="submit-btn" data-en="Send via Email" data-zh="以電子郵件寄送" data-ja="メールで送信">Send via Email</button>
       <p class="form-hint" data-en="Clicking send opens your email app with this message ready to go." data-zh="點擊送出後會開啟您的郵件軟體，訊息內容已自動帶入。" data-ja="送信をクリックするとメールアプリが開き、内容が自動で入力されます。">Clicking send opens your email app with this message ready to go.</p>
     </form>
+  </section>
+
+  <section>
+    <h2 data-en="Location" data-zh="所在位置" data-ja="所在地">Location</h2>
+    <div class="map-frame">
+      <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=119.5%2C21.7%2C122.3%2C25.5&amp;layer=mapnik"></iframe>
+    </div>
+    <p class="form-hint" style="margin-top:10px;" data-en="Based in Taiwan — working remotely with clients worldwide." data-zh="人在台灣 — 遠端與全球客戶合作。" data-ja="台湾在住 — 世界中のクライアントとリモートで協力します。">Based in Taiwan — working remotely with clients worldwide.</p>
   </section>
 
   <footer data-en="© 2026 Yuhao. Built for remote freelance opportunities." data-zh="© 2026 Yuhao。為遠端接案機會而打造。" data-ja="© 2026 Yuhao。海外リモート案件のために作成。">
